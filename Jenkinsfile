@@ -15,7 +15,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/release/qa']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ahmadaboualshamat/portal-frontend']])
             }
         }
-//         stage('Build Node') {
+//         stage('Build Node') { // Then step putted inside docker file as another implementation
 //             steps{
 //                 // bat 'mvn clean install'
 //                 // bat 'mvn help:evaluate -Dexpression=settings.localRepository'
